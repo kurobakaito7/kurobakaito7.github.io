@@ -47,7 +47,7 @@ bootstrap();
 $ npm run start
 ```
 
-在应用运行时，打开浏览器并导航至 http://localhost:3000/api。就会看到 Swagger UI。
+在应用运行时，打开浏览器并导航至`http://localhost:3000/api`。就会看到 Swagger UI。
 
 ## 命令行插件
 

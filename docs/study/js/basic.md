@@ -1,5 +1,6 @@
 ---
 title: js基础
+description: 基础知识汇总
 tag: 
  - js
 ---

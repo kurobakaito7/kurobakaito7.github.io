@@ -1,5 +1,6 @@
 ---
 title: js异步编程
+description: 异步编程
 tag:
  - js
  - promise

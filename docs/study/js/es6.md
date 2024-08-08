@@ -1,5 +1,6 @@
 ---
 title: ES6相关
+description: es6知识汇总
 tag: 
  - js
 ---

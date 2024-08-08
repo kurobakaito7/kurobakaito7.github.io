@@ -1,8 +1,10 @@
 ---
 description: Nest (NestJS) 是一个用于构建高效、可扩展的 Node.js 服务器端应用的框架。
+tag:
+ - Nest.js
 ---
 
-# 企业级node框架nestjs学习
+# nestjs基础知识
 
 ## 基础架构
 
@@ -65,13 +67,79 @@ async findAll() {
 
 它们是从 `@nestjs/common` 包中导出的
 
+#### 定制管道
+
+构建自己的管道
+
+自定义一个简单的简单的 `ValidationPipe` ,让它简单地接受一个输入值并立即返回相同的值，表现得像一个恒等函数。
+::: code-group
+```ts [validation.pipe.ts]
+import { PipeTransform, Injectable, ArgumentMetadata } from '@nestjs/common';
+
+@Injectable()
+export class ValidationPipe implements PipeTransform {
+  transform(value: any, metadata: ArgumentMetadata) {
+    return value;
+  }
+}
+```
+:::
+
 ### 守卫
 
 守卫是一个用 `@Injectable()` 装饰器注释的类，它实现了 `CanActivate` 接口。
 
+构建一个授权守卫 `AuthGuard` 假设一个经过身份验证的用户（因此，一个令牌附加到请求标头）。它将提取并验证令牌，并使用提取的信息来确定请求是否可以继续。
+
+::: code-group
+
+```ts [auth.guard.ts]
+import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
+import { Observable } from 'rxjs';
+
+@Injectable()
+export class AuthGuard implements CanActivate {
+  canActivate(
+    context: ExecutionContext,
+  ): boolean | Promise<boolean> | Observable<boolean> {
+    const request = context.switchToHttp().getRequest();
+    return validateRequest(request);
+  }
+}
+```
+
+:::
+
 ### 拦截器
 
 拦截器是用 `@Injectable()` 装饰器注释并实现 `NestInterceptor` 接口的类。
+
+定义一个超时拦截器，处理路由请求的超时。当端点在一段时间后未返回任何内容时，希望以错误响应终止。
+
+::: code-group
+
+```ts [timeout.interceptor.ts]
+import { Injectable, NestInterceptor, ExecutionContext, CallHandler, RequestTimeoutException } from '@nestjs/common';
+import { Observable, throwError, TimeoutError } from 'rxjs';
+import { catchError, timeout } from 'rxjs/operators';
+
+@Injectable()
+export class TimeoutInterceptor implements NestInterceptor {
+  intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
+    return next.handle().pipe(
+      timeout(5000),
+      catchError(err => {
+        if (err instanceof TimeoutError) {
+          return throwError(() => new RequestTimeoutException());
+        }
+        return throwError(() => err);
+      }),
+    );
+  };
+};
+```
+:::
+5 秒后，请求处理将被取消。还可以在抛出 `RequestTimeoutException` 之前添加自定义逻辑（例如释放资源）。
 
 ### 自定义装饰器
 
@@ -98,7 +166,7 @@ async findOne(@User() user: UserEntity) {
 }
 ```
 
-### 其他小技巧
+## 其他小技巧
 
 一键生成CRUD
 ```

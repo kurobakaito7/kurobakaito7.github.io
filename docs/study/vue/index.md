@@ -4,7 +4,7 @@ description: vue框架原理深挖
 tag:
  - vue
 ---
-# VUE
+# Vue
 
 ## vue原理
 

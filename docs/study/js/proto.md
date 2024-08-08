@@ -1,5 +1,6 @@
 ---
 title: js的原型
+description: js原型相关
 tag:
  - js
 ---

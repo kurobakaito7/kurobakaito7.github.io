@@ -1,5 +1,6 @@
 ---
 title: 数据类型
+description: js常见的数据类型与区别
 tag:
  - js
 ---

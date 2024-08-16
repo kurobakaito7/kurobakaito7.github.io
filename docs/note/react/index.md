@@ -8,9 +8,9 @@ tag:
 # React18
 
 ## react功能
-+ Hook —— 在组件中使用不同的 React 特性。
++ [Hook](/note/react/hooks) —— 在组件中使用不同的 React 特性。
 + 组件 —— 记录了可以在 JSX 中使用的内置组件。
-+ API —— 用于定义组件的有用 API。
++ [API](/note/react/api) —— 用于定义组件的有用 API。
 + 指示符 —— 为与 React 服务器组件兼容的捆绑器提供指示。
 
 ## react-dom

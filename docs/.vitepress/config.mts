@@ -51,6 +51,7 @@ export default defineConfig({
         items: [
           { text: "nodejs", link: "/note/nodejs/" },
           { text: "nestjs", link: "/note/nestjs/" },
+          { text: "nextjs", link: "/note/nextjs/" },
           { text: "react", link: "/note/react/" },
         ],
       },

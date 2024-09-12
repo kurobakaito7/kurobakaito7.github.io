@@ -7,6 +7,8 @@ tag:
 
 # Hooks
 
+## useState
+
 ## useEffect
 
 `useEffect` 是一个react hook函数，用于在react组件中创建不是由事件引起而是由渲染本身引起的操作，比如发送ajax请求，更改dom等
@@ -61,6 +63,10 @@ export default App
 
 ```
 
+## useLayoutEffect
+
+
+
 ## useReducer
 
 作用：和 `useState` 的作用类似，用来管理相对复杂的状态数据
@@ -102,6 +108,15 @@ function App() {
 
 export default App;
 ```
+
++ 注意：如果state是对象类型，直接修改原始的 state 返回，是触发不了重新渲染的，必须返回一个新的对象才行。
++ 若对象结构很复杂，每次创建一个新的对象会比较繁琐，性能也不好，就可以使用复杂对象修改 immutable相关的库了，最常用的是immer
+
+> 在react里，只要涉及到state的修改，就必须返回新的对象，不管是 `useState` 还是 `useReducer` - React 推崇数据的不可变
+
+
+## useRef
+
 
 ## useMemo
 
@@ -172,7 +187,7 @@ export default App;
 
 ## useImperativeHandle
 
-作用：通过 `ref` 暴露子组件中的方法
+作用：不用将原生的标签暴露，通过 `ref` 暴露子组件中的方法
 
 ```js
 import { forwardRef, useImperativeHandle, useRef } from "react";
@@ -213,3 +228,51 @@ function App() {
 export default App;
 
 ```
+
+## useContext
+
+跨层组件之间传递数据可以用 Context。用 `createContext` 创建 `context` 对象，用 `Provider` 修改其中的值。
+
+## memo + useMemo + useCallback
+
+memo 包裹的组件只有在 props 变的时候才会重新渲染，useMemo、useCallback 可以防止 props 不必要的变化，两者一般是结合使用。不过当用来缓存计算结果等场景的时候，也可以单独用 useMemo、useCallback
+
+
+## hook闭包陷阱及解决
+
+闭包陷阱就是 effect 函数等引起了 state，形成了闭包，但是并没有把 state 加到依赖数组里，导致执行 effect 时用的 state 还是之前的
+
+1. 使用 setState 的另一种参数
+```js
+function App() {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    setInterval(() => {
+      setCount(count => count+1)
+    },1000)
+  }, []);
+  return <div>{count}</div>
+}
+```
+类似，还可以用useReducer解决
+
+2. 添加依赖数组
+```js
+function App() {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCount(count+1)
+    },1000)
+    return ()=> {
+      clearInterval(timer)
+    }
+  }, [count]);
+  return <div>{count}</div>
+}
+```
+但是有定时器，每次会重新运行定时器，这里不太适合
+
+3. 使用 `useRef` 保存每次渲染的值，用到的时候从 `ref.current` 取
+
+定时器的场景需要保证定时器只跑一次，不然重新跑会导致定时不准，所以需要用 useEffect+useRef 

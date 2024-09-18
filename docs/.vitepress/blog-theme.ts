@@ -27,6 +27,15 @@ const blogTheme = getThemeConfig({
   // markdown 图表支持（会增加一定的构建耗时）
   mermaid: true,
 
+  // 看板娘集成
+  oml2d: {
+    mobileDisplay: true,
+    models: [
+      {
+        path: 'https://registry.npmmirror.com/oml2d-models/0.7.0/files/models/Senko_Normals/senko.model3.json'
+      }
+    ]
+  },
   // 页脚
   footer: {
     // message 字段支持配置为HTML内容，配置多条可以配置为数组

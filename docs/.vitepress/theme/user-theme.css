@@ -3,18 +3,18 @@
 
 /* 浅色模式使用的变量 */
 html[theme] {
-  --vp-c-user-1:rgb(0, 42, 255);
-  --vp-c-user-2:rgb(38, 0, 255);
+  --vp-c-user-1:rgb(0, 255, 255);
+  --vp-c-user-2:rgb(0, 255, 251);
   --vp-c-user-3:green;
-  --vp-c-user-soft:rgba(255,0,0,.5);
+  --vp-c-user-soft:rgba(43, 0, 255, 0.5);
 }
 
 /* 深色模式使用的变量 */
 html[theme].dark {
-  --vp-c-user-1:rgb(0, 174, 255);
+  --vp-c-user-1:rgb(0, 195, 255);
   --vp-c-user-2:rgb(0, 119, 128);
   --vp-c-user-3:orange;
-  --vp-c-user-soft:rgba(255,255,0,.5);
+  --vp-c-user-soft:rgba(115, 0, 255, 0.5);
 }
 
 /* 覆盖默认变量 */

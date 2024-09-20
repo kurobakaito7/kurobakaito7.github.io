@@ -3,7 +3,7 @@ layout: home
 # 首页部分元素定制
 blog:
  name: 'Kurobakaito'
- motto: 努力努力再努力
+ motto: 做一个温柔向上的人
  inspiring:
   - 路漫漫其修远兮，吾将上下而求索
   - 莫听穿林打叶声，何妨吟啸且徐行

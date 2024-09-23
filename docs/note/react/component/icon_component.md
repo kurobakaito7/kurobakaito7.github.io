@@ -1,12 +1,12 @@
 ---
-title: 封装一个icon组件
+title: 🧰封装一个icon组件
 description: 记录封装的原理
 tag:
  - react
- - pro
+ - 组件
 ---
 
-# icon-component
+# 🧰icon-component
 
 ## icon 组件封装
 

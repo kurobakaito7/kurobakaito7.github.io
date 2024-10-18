@@ -64,6 +64,11 @@ export default defineConfig({
           { text: "Vue", link: "/study/vue/" },
         ],
       },
+      { text: "项目笔记",
+        items: [
+          { text: "Playground", link: "/project/playground/"}
+        ]
+      },
       { text: "日常记录", link: "/life/"}
     ],
     socialLinks: [

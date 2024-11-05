@@ -1,5 +1,5 @@
 // 主题独有配置
-import { getThemeConfig } from '@sugarat/theme/node'
+import { getThemeConfig } from "@sugarat/theme/node";
 
 // 开启RSS支持（RSS配置）
 // import type { Theme } from '@sugarat/theme'
@@ -32,18 +32,25 @@ const blogTheme = getThemeConfig({
     mobileDisplay: true,
     models: [
       {
-        path: 'https://registry.npmmirror.com/oml2d-models/0.7.0/files/models/Senko_Normals/senko.model3.json'
-      }
-    ]
+        path: "https://model.oml2d.com/mai/model.json",
+        scale: 0.1,
+        position: [-10, -15],
+      },
+      {
+        path: "https://model.oml2d.com/kobayaxi/model.json",
+        scale: 0.1,
+        position: [-10, 0],
+      },
+    ],
   },
   // 页脚
   footer: {
     // message 字段支持配置为HTML内容，配置多条可以配置为数组
     // message: '下面 的内容和图标都是可以修改的噢（当然本条内容也是可以隐藏的）',
-    copyright: 'MIT License | Kurobakaito',
+    copyright: "MIT License | Kurobakaito",
     icpRecord: {
-      name: '蜀ICP备19011724号',
-      link: 'https://beian.miit.gov.cn/'
+      name: "蜀ICP备19011724号",
+      link: "https://beian.miit.gov.cn/",
     },
     /* securityRecord: {
       name: '公网安备xxxxx',
@@ -52,26 +59,25 @@ const blogTheme = getThemeConfig({
   },
 
   // 主题色修改
-  themeColor: 'el-blue',
+  themeColor: "el-blue",
 
   // 文章默认作者
-  author: 'Kurobakaito',
+  author: "Kurobakaito",
 
   // 友链
   friend: [
     {
-      nickname: '粥里有勺糖',
-      des: '你的指尖用于改变世界的力量',
+      nickname: "粥里有勺糖",
+      des: "你的指尖用于改变世界的力量",
       avatar:
-        'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
-      url: 'https://sugarat.top',
+        "https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030",
+      url: "https://sugarat.top",
     },
     {
-      nickname: 'Vitepress',
-      des: 'Vite & Vue Powered Static Site Generator',
-      avatar:
-        'https://vitepress.dev/vitepress-logo-large.webp',
-      url: 'https://vitepress.dev/',
+      nickname: "Vitepress",
+      des: "Vite & Vue Powered Static Site Generator",
+      avatar: "https://vitepress.dev/vitepress-logo-large.webp",
+      url: "https://vitepress.dev/",
     },
   ],
 
@@ -109,6 +115,6 @@ const blogTheme = getThemeConfig({
   //   ],
   //   duration: 0
   // },
-})
+});
 
-export { blogTheme }
+export { blogTheme };

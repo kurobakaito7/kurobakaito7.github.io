@@ -1,4 +1,5 @@
 ---
+hidden: true
 title: JS基础知识
 description: 对js的相关知识进行了总结，如数据类型，原型等
 ---

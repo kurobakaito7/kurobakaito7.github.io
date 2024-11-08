@@ -62,7 +62,7 @@ export default defineConfig({
           { text: "计算机网络", link: "/study/internet/" },
           { text: "JavaScript", link: "/study/js/" },
           { text: "Vue", link: "/study/vue/" },
-          { text: "Webpack", link: "/study/engineering/" },
+          { text: "Webpack", link: "/study/webpack/" },
         ],
       },
       { text: "项目笔记",

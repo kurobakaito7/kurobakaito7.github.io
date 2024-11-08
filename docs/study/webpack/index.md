@@ -16,3 +16,7 @@ tag:
 + [webpack构建性能优化](/study/webpack/make_optimization.html)
 + [webpack SplitChunks 分包](/study/webpack/splitChunks.html)
 + [webpack代码压缩](/study/webpack/minimize.html)
++ [webpack应用性能优化](/study/webpack/pack_optimization.html)
+
+
+> 文章全都学习自掘金小册《[Webpack5 核心原理与应用实践](https://juejin.cn/book/7115598540721618944)》

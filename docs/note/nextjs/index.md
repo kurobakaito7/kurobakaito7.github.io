@@ -1,5 +1,6 @@
 ---
 title: Next.js
+hidden: true
 description: Next.js学习基本使用
 tag: 
  - next.js

@@ -145,7 +145,7 @@ npm publish
 
 发布完成后就可以在npm上搜索到自己的包了
 
-![npm](/assets/npm包.png)
+![npm](engineer.assets/npm包.png)
 
 
 ### 🕳坑

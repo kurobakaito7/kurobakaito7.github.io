@@ -75,7 +75,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/kurobakaito7/kurobakaito7.github.io",
+        link: "https://github.com/kurobakaito7",
       },
     ],
   },

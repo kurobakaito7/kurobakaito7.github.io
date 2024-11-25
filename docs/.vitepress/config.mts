@@ -53,6 +53,7 @@ export default defineConfig({
           { text: "nestjs", link: "/note/nestjs/" },
           { text: "nextjs", link: "/note/nextjs/" },
           { text: "react", link: "/note/react/" },
+          { text: "前端工程化", link: "/note/front_end_engineering/" },
         ],
       },
       {

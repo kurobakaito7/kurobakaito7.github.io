@@ -1,6 +1,7 @@
 ---
 title: react 中的jsx
 description: jsx 的编译过程
+cover: false
 tag:
  - react
 ---

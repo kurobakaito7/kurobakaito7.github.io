@@ -45,19 +45,20 @@ export default defineConfig({
     //   text: '去 GitHub 上编辑内容'
     // },
     nav: [
-      { text: "首页", link: "/" },
+      { text: "⛩️首页", link: "/" },
       {
-        text: "学习笔记",
+        text: "📓学习笔记",
         items: [
-          { text: "nodejs", link: "/note/nodejs/" },
-          { text: "nestjs", link: "/note/nestjs/" },
-          { text: "nextjs", link: "/note/nextjs/" },
-          { text: "react", link: "/note/react/" },
+          { text: "Nodejs", link: "/note/nodejs/" },
+          { text: "Nestjs", link: "/note/nestjs/" },
+          { text: "Nextjs", link: "/note/nextjs/" },
+          { text: "React", link: "/note/react/" },
+          { text: "React 优化", link: "/note/react/optimization/"},
           { text: "前端工程化", link: "/note/front_end_engineering/" },
         ],
       },
       {
-        text: "知识汇总",
+        text: "🎯知识汇总",
         items: [
           { text: "浏览器原理", link: "/study/browser/" },
           { text: "计算机网络", link: "/study/internet/" },
@@ -66,12 +67,13 @@ export default defineConfig({
           { text: "Webpack", link: "/study/webpack/" },
         ],
       },
-      { text: "项目笔记",
+      { text: "🌀项目笔记",
         items: [
-          { text: "Playground", link: "/project/playground/"}
+          { text: "Playground", link: "/project/playground/"},
+          { text: "React 组件库", link: "/note/react/component/"}
         ]
       },
-      { text: "日常记录", link: "/life/"}
+      { text: "🌈日常记录", link: "/life/"}
     ],
     socialLinks: [
       {

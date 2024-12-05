@@ -1,11 +1,12 @@
 ---
-title: 渲染控制
+title: 🚀渲染控制
 description: 学习 react 渲染控制的常规方法和原理，以及性能优化的主要手段
 cover: false
 tag:
  - react
+ - react优化
 ---
-# 渲染控制
+# 🚀渲染控制
 
 ## React 渲染
 对于 React 渲染，不要仅仅理解成类组件触发 render 函数，函数组件本身执行

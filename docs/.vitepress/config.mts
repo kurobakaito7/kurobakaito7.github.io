@@ -38,7 +38,7 @@ export default defineConfig({
     lastUpdatedText: "上次更新于",
 
     // 设置logo
-    logo: "/logo.png",
+    logo: "/logo.jpg",
     // editLink: {
     //   pattern:
     //     'https://github.com/kurobakaito7/kurobakaito7.github.io',

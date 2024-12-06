@@ -1,6 +1,7 @@
 ---
 title: 📈资源包通过 excel 和 google sheet 导出分享
 description: 将资源包以excel表 或者 csv 文件导出给产品经理
+date: 2024-10-23
 tag:
  - react
 ---

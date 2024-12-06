@@ -1,6 +1,7 @@
 ---
 title: babel 编译 + iframe 预览
 description: babel 进行代码编译后 用 iframe 进行预览
+date: 2024-09-13
 tag:
  - project
  - babel

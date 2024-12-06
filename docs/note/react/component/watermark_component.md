@@ -1,6 +1,7 @@
 ---
 title: 🖌️封装一个watermark组件
 description: 记录封装的原理
+date: 2024-10-25
 tag:
  - react
  - 组件

@@ -1,6 +1,7 @@
 ---
 title: 封装一个mini calendar
 description: 记录一下学习封装一个迷你版日期组件，后面会继续做仿antd版本的日历组件
+date: 2024-09-25
 tag:
  - react
 ---

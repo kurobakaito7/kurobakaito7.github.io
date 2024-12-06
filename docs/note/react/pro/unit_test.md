@@ -3,8 +3,6 @@ title: React中写单测
 description: 学习在react中写单测
 tag:
  - react
- - pro
- - test
 ---
 
 # react中写单测

@@ -1,6 +1,8 @@
 ---
 title: React.Children 和 它的两种替代方案
 description: 关于 React 中 Children 的 api 也被放到了 Legacy 目录下，并提示用 Children 的 api 会导致代码脆弱，建议用别的方式替代
+tag:
+  - react
 ---
 
 # React.Children

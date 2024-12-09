@@ -25,6 +25,7 @@ export default function App() {
     return /*#__PURE__*/React.createElement("div", null, "Hello world!");
 }
 ```
+
 **问题：**
 
 运行代码的时候，会引入 `import` 的模块，这时会找不到。

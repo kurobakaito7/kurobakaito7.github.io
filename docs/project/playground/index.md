@@ -75,3 +75,5 @@ hidden: true
 + 通过 Performance 分析性能问题，并通过 Web Worker 拆分编译逻辑到 worker 线程来进行性能优化，消除了 long lask
 
 [🔖项目源码地址](https://github.com/kurobakaito7/react-playground)
+
+[🛰️来体验一下吧!](https://kurobakaito7.github.io/react-playground)

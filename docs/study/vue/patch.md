@@ -2,7 +2,7 @@
 title: diff和patch机制
 description: Vue在数据状态更新时的差异diff和patch机制
 cover: false
-data: 2024-09-18
+date: 2024-09-18
 tag:
  - vue
 ---

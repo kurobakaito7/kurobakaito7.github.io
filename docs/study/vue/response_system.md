@@ -2,7 +2,7 @@
 title: 响应式系统
 description: 响应式系统基本原理
 cover: false
-data: 2024-09-16
+date: 2024-09-16
 tag:
  - vue
 ---

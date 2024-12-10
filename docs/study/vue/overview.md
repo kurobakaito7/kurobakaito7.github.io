@@ -2,7 +2,7 @@
 title: Vue运行机制全局概览
 description: 对 Vue 内部的整个流程进行一个梳理
 cover: false
-data: 2024-09-15
+date: 2024-09-15
 tag:
  - vue
 ---

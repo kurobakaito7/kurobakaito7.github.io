@@ -1,6 +1,7 @@
 ---
 title: ⚙️SplitChunks的使用
 description: 使用SplitChunks来提升应用性能
+date: 2024-10-18
 tag:
  - webpack
 ---

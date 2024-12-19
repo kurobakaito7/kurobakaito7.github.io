@@ -1,6 +1,7 @@
 ---
 title: ⚙️webpack持久化缓存
 description: 通过Webpack持久化缓存，大幅提升构建性能
+date: 2024-10-18
 tag:
  - webpack
 ---

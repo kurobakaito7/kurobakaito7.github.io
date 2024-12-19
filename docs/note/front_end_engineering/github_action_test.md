@@ -1,14 +1,26 @@
 ---
-title: 🔧github actions 自动化部署
-description: github actions 自动化部署一个群机器人
+title: 🔧自动化部署群聊机器人
+description: github actions 自动化部署一个群机器人每天自动发送日期消息
+date: 2024-10-15
 cover: false
 tag:
  - github
 ---
 
-# 🔧github actions 部署
+# 🔧 自动化部署群聊机器人
 
 机器人没什么好说的，就是一个简单的http请求，然后把信息发送到机器人的webhook中。
+
+主要是如何对github actions进行配置。
+
+## 目录结构
+
+```
+├──.github
+│   └── workflows
+│       └── wechat-robot.yml
+└── wechatRobot.js
+```
 
 ## 配置
 
@@ -54,11 +66,6 @@ jobs:
               run: node wechatRobot.js
 ```
 
-## 目录结构
+通过配置上传到github仓库中，github就可以给我们的脚本自动部署了。
 
-```
-├──.github
-│   └── workflows
-│       └── wechat-robot.yml
-└── wechatRobot.js
-```
+> github actions 主要是部署像博客，文档这些纯前端项目

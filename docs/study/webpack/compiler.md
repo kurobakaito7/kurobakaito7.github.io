@@ -1,6 +1,7 @@
 ---
 title: ⚙️webpack核心流程与性能分析
 description: 学习 Webpack 打包的核心流程以及借助一些可视化工具分析Webpack的编译性能
+date: 2024-10-18
 tag:
  - webpack
 ---

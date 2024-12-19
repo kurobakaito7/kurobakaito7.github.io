@@ -1,6 +1,7 @@
 ---
 title: ⚙️webpack核心配置结构
 description: Webpack 是一种 「配置」 驱动的构建工具，所以站在应用的角度，必须深入学习 Webpack 的各项配置规则，才能灵活应对各种构建需求。
+date: 2024-10-18
 tag:
  - webpack
 ---

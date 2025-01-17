@@ -18,7 +18,7 @@ export default defineConfig({
   // base,
   lang: "zh-cn",
   title: "Kurobakaito",
-  description: "粥里有勺糖的博客主题，基于 vitepress 实现",
+  description: "kurobakaito's blog",
   lastUpdated: true,
   // 详见：https://vitepress.dev/zh/reference/site-config#head
   head: [
@@ -67,10 +67,10 @@ export default defineConfig({
           { text: "Webpack", link: "/study/webpack/" },
         ],
       },
-      { text: "🌀项目笔记",
+      { text: "🌀项目",
         items: [
-          { text: "Playground", link: "/project/playground/"},
-          { text: "React 组件库", link: "/note/react/component/"}
+          { text: "react-playground", link: "https://kurobakaito7.github.io/react-playground"},
+          { text: "React 组件库", link: "/project/component/"}
         ]
       },
       { text: "🌈日常记录", link: "/life/"}

@@ -4,7 +4,7 @@ description: 组件库项目
 date: 2024-10-25
 hidden: true
 tag:
- - react
+ - project
  - 组件
 ---
 # 🗻react 组件库
@@ -29,3 +29,9 @@ tag:
 - [Tour](https://github.com/kurobakaito7/tour-component)
 - [Upload](https://github.com/kurobakaito7/upload-component)
 - [Form](https://github.com/kurobakaito7/form-component)
+
+
+## 使用
+```bash
+npm install kirito-components
+```

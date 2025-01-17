@@ -1,10 +1,15 @@
 ---
-title: 有感
+title: 记录
 description: 零零碎碎的记录
 cover: false
 hidden: true
 ---
+<script setup>
+    import Sentence from '../.vitepress/Sentence.vue'
+</script>
 # 开篇
+
+<Sentence />
 
 🎉2024年7月5日，是我将 blog 第一次部署在 github 上的日子
 

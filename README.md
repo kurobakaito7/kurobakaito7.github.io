@@ -1,4 +1,4 @@
-# Kurobakaito的个人博客🪪
+# Kurobakaito's Blog🪪
 
 something about kurobakaito🌊
 

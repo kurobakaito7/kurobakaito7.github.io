@@ -11,15 +11,15 @@ const blogTheme = getThemeConfig({
     mobileDisplay: true,
     models: [
       {
-        path: "https://model.oml2d.com/mai/model.json",
+        path: "https://oml2d-models.sugarat.top/mai/model.json",
         scale: 0.1,
         position: [-10, -15],
       },
-      {
-        path: "https://model.oml2d.com/kobayaxi/model.json",
-        scale: 0.1,
-        position: [-10, 0],
-      },
+      // {
+      //   path: "https://model.oml2d.com/kobayaxi/model.json",
+      //   scale: 0.1,
+      //   position: [-10, 0],
+      // },
     ],
   },
   // 页脚
@@ -39,14 +39,14 @@ const blogTheme = getThemeConfig({
 
   // 相关文章
   recommend: {
-    title: '🔍 相关文章',
-    nextText: '换一组',
+    title: "🔍 相关文章",
+    nextText: "换一组",
     pageSize: 9,
-    empty: '暂无相关文章',
-    style: 'sidebar',
-    sort: 'date',
+    empty: "暂无相关文章",
+    style: "sidebar",
+    sort: "date",
     showDate: true,
-    showNum: true
+    showNum: true,
   },
 
   // 主题色修改
